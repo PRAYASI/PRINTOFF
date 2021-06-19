@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="header">
+        <table  align="center" class="center">
+        <tr>
+        <td align="center" ><img style="float: left; margin: 0px 0px 0px 0px;" src="paw.png" height="45" width="45" ></td><td>     &nbsp; </td>
+        <td  align="center" rowspan="2">FOOT PRINT</td>
+        <tr><td></td></tr>
+        <!--<td align="center"><img src="https://vtop.vit.ac.in/vtop/assets/img/vitlogo.png" height="120px" width="370px"></td>-->
+        </tr><br>
+        </table><br>
+        </div>
+    <center>
+        <br>
+        <br>
+        <br>
+        <div class="al">
+            <image src="https://cdn.dribbble.com/users/2760451/screenshots/5783614/printer.gif" style="float: left; margin: 0px 5px 150px 90px;" height="450px" width=635px></image>
+        </div> 
+    <div class="side">
+        <h2 style="color:#273478">SIGN IN</h2>
+          <form method="POST" onsubmit="return validateForm()">
+              <label for="regno">Registration Number:</label><br>
+              <input type="text" id="regno" name="regno" placeholder="Enter your registration number here" pattern="[0-9]{2}[A-Z a-z]{3}[0-9]{4}" required>
+              <br>
+              <br>
+              <label for="pass">Password:</label><br>
+              <input type="password" id="pass" name="pass" placeholder="Enter your password here">
+              <br>
+              <br>
+              <input type="submit" name="Submit" id="Submit" value="Submit">
+              </form>   
+          </div>
+    </center>
+    
+    <div class="footer">
+        <p>&#169; FOOT PRINT, Chennai <span style="font-size: 15px;"> - Kelambakkam, Vandalur Road, Rajan Nagar, Chennai, Tamil Nadu 600127, <b>Phone: 044 3993 1555</b></span> </p>       
+    </div>
+    <BR><BR><BR>
+    <script>
+        function validateForm() 
+        { 
+        var regno=document.forms["regForm"]["rego"].value;
+        var passcode=document.forms["regForm"]["passcode"].value;
+        
+        if(regno==" " || regno.length>9)
+        {
+         alert('Please enter a valid Registration number');
+         return false;
+        }
+        
+        if(/^(?=.*\d)(?=.*[A-Z]).{6,20}$/.test(passcode)) 
+        { 
+        return true;
+        }
+        else
+        { 
+        alert('Please fill a passwrod that contains atleast 6 to 20 charaters which contain at least one numeric digit and one uppercase.')
+        return false;
+        }
+        }
+        </script>
+        
+</body>
+</html>
+
+<!--https://cdn.dribbble.com/users/2760451/screenshots/5783614/printer.gif-->
