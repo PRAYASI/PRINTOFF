@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+       
+    </style>
+   
+</head>
+<body>
+    <div class="header">
+        <table  align="center" class="center">
+        <tr>
+        <td align="center" ><img style="float: left; margin: 0px 0px 0px 0px;" src="paw.png" height="45" width="45" ></td><td>     &nbsp; </td>
+        <td  align="center" rowspan="2">FOOT PRINT</td>
+        <tr><td></td></tr>
+        <!--<td align="center"><img src="https://vtop.vit.ac.in/vtop/assets/img/vitlogo.png" height="120px" width="370px"></td>-->
+        </tr><br>
+        </table><br>
+    </div>
+    <div class="topnav">
+      <a href="homepg.html">Home</a>
+      <a href="About_Us.html">About Us</a>
+      <a href="projectlogin.php">Logout</a>&nbsp;&nbsp;
+      <a id="rnav" href="orderpg.html">Order Now <img src="shopcart.png" height="25" width="25"></a></align> 
+  </div>
+  <div class="topnavr">
+      
+  </div>
+    <br><br><br>
+    <center>
+
+
+    <div class="column">
+        <h2 style="color:#273478">Your Order</h2>
+          <form method="POST" onsubmit="return validateForm()">
+              <label for="regno">File to be printed:</label>
+              <input type="file" id="file" name=file required><br><br><br>
+
+              <label for="number">Number of copies: &nbsp;&nbsp;</label>
+              <input type="number" id="number" name="number" required min="1"></br><br>
+
+              <p>Orientation:</p>
+              <input type="radio" id="portrait" name="portrait" value="portrait">
+              <label for="portrait">Portrait</label>&nbsp;
+              <input type="radio" id="landscape" name="portrait" value="landscape">
+              <label for="landscape">Landscape</label>&nbsp;
+             
+              <br><br>
+              
+             
+
+            <label for="sides">Printing sides:</label>
+            <select id="sides" name="sides" form="sides">
+            <option value="select">Select printing sides</option>
+            <option value="oneside">Print one sided</option>
+            <option value="twosides">Manually print both sided</option>
+            </select><br><br><br>
+
+            <p>Colour preference:</p>
+              <input type="radio" id="Colour" name="Colour" value="Colour">
+              <label for="Colour">Colour</label>&nbsp;
+              <input type="radio" id="bnw" name="Colour" value="bnw">
+              <label for="bnw">Black and white</label>&nbsp;
+              
+              <br><br><br><br>
+
+              <label for="paperwork">No of pages per sheet:</label>
+              <select id="paperwork" name="paperwork" form="paperwork" placeholder="Select number of pages per sheet">
+              <option value="select">Select no of pages per sheet</option>
+              <option value="one">1 page per sheet</option>
+              <option value="two">2 pages per sheet</option>
+              <option value="four">4 pages per sheet</option>
+              <option value="six">6 pages per sheet</option>
+              <option value="eight">8 pages per sheet</option>
+              <option value="ten">10 pages per sheet</option>
+              </select><br><br><br><br>
+
+            <label for="nop">Paper Size:</label>
+            <select id="nop" name="nop" form="nop">
+            <option value="select">Select paper size</option>
+            <option value="a4">A4 (21cm x 29.7cm)</option>
+            <option value="a3">A3 (29.7cm x 42cm)</option>
+            <option value="a5">A5 (14.8cm x 21cm)</option>
+            <option value="ex">Executive(18.42cm x 26.67cm)</option>
+              </select><br><br><br>
+              <br>
+              <label for="spl">Special instructions, if any :</label><br><br>
+              <textarea id="spl" name="spl" rows="4" cols="50" ></textarea>
+            <br><br><br>
+              <input type="submit" name="Submit" id="Submit" value="Place an order">
+              </form>   
+    </div>
+</center>
+
+
+<div class="footer">
+    <p>&#169; FOOT PRINT, Chennai <span style="font-size: 15px;"> - Kelambakkam, Vandalur Road, Rajan Nagar, Chennai, Tamil Nadu 600127, <b>Phone: 044 3993 1555</b></span> </p>       
+</div>
+<BR><BR><BR>
+
+</body>
+</html>
+
+<!--File uploaded
+No of copies
+Orientation: Radio buttons : Portrait or Landscape
+Drop down for printing : (whether one sided, both sided)
+Color preference:Radio Buttons
+Drop down for sizes(A4 21cm x 29.7 cm ,A3,A5,B5(JIS),B4(JIS))
+No of pages per sheet:(drop down:1,2,4,6,8,10,16)
+Particular Instruction: textarea
+
+Order Now submit button-->
